@@ -4,7 +4,7 @@ metadata:
   name: frontend
   namespace: app1
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: frontend
@@ -22,3 +22,4 @@ spec:
             - name: BACKEND_URL
 
               value: http://backend-svc:5000/api/message
+
